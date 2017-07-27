@@ -3,11 +3,11 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-    //res.send('Hello World');
     res.render('index', { title: 'Express' });
 });
-
+router.post('/',function (req,res,next) {
+    console.log(req.body);
+});
 var http=require("http");
-
 
 module.exports = router;

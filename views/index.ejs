@@ -23,8 +23,6 @@
     </table>
     <script>
     </script>
-
-
   <script>
       //language=JQuery-CSS
       $("#button").click(function(){
@@ -32,7 +30,7 @@
           var password=$("#password").val();
           $.ajax({
               type: "post",
-              url: '/login',
+              url: '/',
               dataType: "json",
               data:{ username: username, password: password },
               success: function(data){
